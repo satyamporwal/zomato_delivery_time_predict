@@ -45,3 +45,9 @@ class DataIngestion:
         except Exception as e:
             logging.info('Exception occured at Data Ingestion stage')
             raise CustomException(e,sys)
+
+
+##running command
+if __name__=='__main__':
+    obj = DataIngestion()
+    train_data,test_data=obj.initiate_data_ingestion()
